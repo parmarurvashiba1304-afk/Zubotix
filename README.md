@@ -1,2 +1,7 @@
 # Zubotix
-this is ai automatic app like emergent, lovable, gemini , chatgpt.
+zubotixai-site/
+│
+├── index.html   (main page)
+├── style.css    (theme + animations)
+└── assets/      (logo, images)
+
