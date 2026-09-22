@@ -81,3 +81,67 @@ zubotixai-site/
   </footer>
 </body>
 </html>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  background: #fdfdfd;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(90deg,#4facfe,#8e54e9);
+  text-align: center;
+  padding: 50px;
+  color: #fff;
+}
+
+.logo { width: 120px; }
+
+/* Navbar */
+.navbar {
+  position: sticky; top: 0;
+  background: #fff; text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.navbar a {
+  color: #4facfe; margin: 15px;
+  text-decoration: none; font-weight: bold;
+  transition: color 0.3s ease;
+}
+.navbar a:hover { color: #8e54e9; }
+
+/* Sections */
+section { padding: 40px; text-align: center; }
+ul { list-style: none; padding: 0; }
+li { margin: 8px 0; }
+
+/* Buttons */
+.btn {
+  background: #4facfe; color: #fff;
+  padding: 12px 25px; border-radius: 30px;
+  border: none; cursor: pointer;
+  text-decoration: none; font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn:hover { background: #8e54e9; transform: scale(1.05); }
+
+/* Footer */
+footer {
+  background: #222; color: #fff;
+  text-align: center; padding: 20px;
+}
+
+/* Animations */
+.fade-in { animation: fadeIn 2s ease; }
+.fade-up { animation: fadeUp 2s ease; }
+.slide-down { animation: slideDown 1.5s ease; }
+.pulse { animation: pulse 2s infinite; }
+.bounce:hover { animation: bounce 0.6s; }
+.glow:hover { box-shadow: 0 0 15px #8e54e9; }
+
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+@keyframes fadeUp { from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);} }
+@keyframes slideDown { from {transform:translateY(-50px); opacity:0;} to {transform:translateY(0); opacity:1;} }
+@keyframes pulse { 0% {transform:scale(1);} 50% {transform:scale(1.1);} 100% {transform:scale(1);} }
+@keyframes bounce { 0%,100% {transform:translateY(0);} 50% {transform:translateY(-10px);} }
